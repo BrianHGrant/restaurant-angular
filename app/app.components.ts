@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
 import {Restaurant} from './restaurant.model';
 import { RestaurantListComponent } from './restaurant-list.component';
 @Component({
@@ -7,6 +7,7 @@ import { RestaurantListComponent } from './restaurant-list.component';
   template: `
   <div class="container">
     <h1>Restaurants</h1>
+    <hr>
     <restaurant-list [restaurantList]="restaurants">
     </restaurant-list>
   </div>
