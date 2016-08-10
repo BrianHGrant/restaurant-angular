@@ -17,7 +17,7 @@ export class AppComponent{
   public restaurants: Restaurant[];
   constructor(){
     this.restaurants = [
-      new Restaurant("Lardo", "Sandwidch", "Washington & SW 12th Ave Portland, or", "cheap", 4.5, 5),
+      new Restaurant("Lardo", "Sandwidch", "Washington & SW 12th Ave Portland, or", "cheap"),
       new Restaurant("Portobello", "Italian", "Division & SE 12th Portland,or", "expensive", 5, 30),
       new Restaurant("Bambo Sushi", "Japanese", "Stark & 12th Ave Portland, or", "Moderate", 4, 20),
       new Restaurant("Pok Pok", "Vietnamese", "Division Portland, or", "Moderate", 4.5, 45),

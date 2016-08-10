@@ -14,6 +14,7 @@ import { Restaurant } from './restaurant.model';
       <h3>Rating: {{restaurant.stars}} Stars</h3>
       <h3>Wait Time: {{restaurant.waitTime}} min</h3>
     </div>
+    <hr>
   `
 })
 
