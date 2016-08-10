@@ -1,10 +1,12 @@
 import { Component } from 'angular2/core';
 import { Restaurant } from './restaurant.model';
+import {RateRestaurantComponent} from './rate.component';
 
 
 @Component({
   selector: 'show-restaurant-details',
   inputs: ['restaurant'],
+  directives: [RateRestaurantComponent],
   template: `
     <hr>
     <div class="details-list">
@@ -15,9 +17,16 @@ import { Restaurant } from './restaurant.model';
       <h3>Wait Time: {{restaurant.waitTime}} min</h3>
     </div>
     <hr>
+    <rate-restaurant  (onSubmitRateForm)="rateCurrentRestaraunt($event)"></rate-restaurant>
+    <hr>
   `
 })
 
 export class ShowRestaurantDetailsComponent {
   public restaurant: Restaurant;
+  rateCurrentRestaraunt(inputArray): void{
+    this.restaurant.starArray.push(inputArray[0])
+    console.log(this.restaurant.starArray);
+
+  };
 }

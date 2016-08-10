@@ -4,8 +4,10 @@ import { Restaurant } from './restaurant.model';
 @Component({
   selector: 'restaurant-display',
   inputs: ['restaurant'],
+
   template: `
     <h3>{{restaurant.name}} | Specialty: {{restaurant.specialty}}</h3>
+
   `
 })
 

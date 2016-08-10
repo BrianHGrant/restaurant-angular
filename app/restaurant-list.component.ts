@@ -7,6 +7,7 @@ import {EditRestaurantDetailsComponent} from "./edit-restaurant.component";
 import {AddRestaurantComponent} from './add-restaurant.component';
 
 
+
 @Component({
   selector: 'restaurant-list',
   inputs: ['restaurantList'],
@@ -39,4 +40,5 @@ export class RestaurantListComponent{
       new Restaurant(inputArray[0],inputArray[1],inputArray[2],inputArray[3])
     );
   }
+
 }
