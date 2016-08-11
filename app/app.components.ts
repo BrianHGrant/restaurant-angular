@@ -19,8 +19,8 @@ export class AppComponent{
     this.restaurants = [
       new Restaurant("Lardo", "Sandwidch", "Washington & SW 12th Ave Portland, or", "cheap"),
       new Restaurant("Portobello", "Italian", "Division & SE 12th Portland,or", "expensive", 5, 30),
-      new Restaurant("Bambo Sushi", "Japanese", "Stark & 12th Ave Portland, or", "Moderate", 4, 20),
-      new Restaurant("Pok Pok", "Vietnamese", "Division Portland, or", "Moderate", 4.5, 45),
+      new Restaurant("Bambo Sushi", "Japanese", "Stark & 12th Ave Portland, or", "moderate", 4, 20),
+      new Restaurant("Pok Pok", "Vietnamese", "Division Portland, or", "moderate", 4.5, 45),
       new Restaurant("Taco Bell", "Mexican", "W Burnside St. Portland, Or", "cheap", 2, 2),
       new Restaurant("Imperial", "Ameircan", "Stark & 7th Ave, or", "expensive", 4.9, 45)
     ]

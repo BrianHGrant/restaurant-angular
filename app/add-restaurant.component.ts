@@ -22,7 +22,7 @@ import { Restaurant } from './restaurant.model';
     <div class="form-group">
       <select class="filter" #addCost>
         <option value="cheap">Cheap</option>
-        <option value="Moderate">Moderate</option>
+        <option value="moderate">Moderate</option>
         <option value="expensive">Expensive</option>
       </select>
     </div>
