@@ -25,8 +25,13 @@ import {RateRestaurantComponent} from './rate.component';
 export class ShowRestaurantDetailsComponent {
   public restaurant: Restaurant;
   rateCurrentRestaraunt(inputArray): void{
-    this.restaurant.starArray.push(inputArray[0])
+    this.restaurant.starArray.push(inputArray[0]);
+    this.restaurant.timeArray.push(inputArray[1]);
+    var arraySum=this.restaurant.starArray.reduce((prev,curr)=> prev + curr);
+    var arrayTimeSum= this.restaurant.timeArray.reduce((prev,curr)=> prev + curr);
+    this.restaurant.stars = Math.round((arraySum/this.restaurant.starArray.length)*10)/10;
+    this.restaurant.waitTime = Math.round((arrayTimeSum/this.restaurant.timeArray.length)*10)/10;
+    console.log(this.restaurant.stars);
     console.log(this.restaurant.starArray);
-
   };
 }
